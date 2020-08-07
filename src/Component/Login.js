@@ -6,12 +6,12 @@ import { Redirect } from 'react-router-dom';
 
 
 const Login = () => {
-  const [dataLoginGoogle, setDataLoginGoogle] = useState();
+  
   const [statusLogin, setstatusLogin] = useState(false);
 
   //Arrow Function
     const responseGoogle = (response) => {
-        setDataLoginGoogle(response.profileObj);
+        
         localStorage.setItem('name',response.profileObj.givenName);
         localStorage.setItem('email',response.profileObj.email);
         localStorage.setItem('image',response.profileObj.imageUrl);
