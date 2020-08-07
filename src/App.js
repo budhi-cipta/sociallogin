@@ -17,7 +17,7 @@ function App() {
             <Login />
           </div> */}
             <Switch>
-              <Route path="/Profile">
+              <Route path="/profile">
                 <Profile />
               </Route>
               <Route path="/">
