@@ -11,8 +11,8 @@ const Login = () => {
 
   //Arrow Function
     const responseGoogle = (response) => {
-        
-        localStorage.setItem('name',response.profileObj.givenName);
+        console.log(response)
+        localStorage.setItem('name',response.profileObj.name);
         localStorage.setItem('email',response.profileObj.email);
         localStorage.setItem('image',response.profileObj.imageUrl);
         setstatusLogin(true);
